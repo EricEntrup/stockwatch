@@ -20,7 +20,6 @@ function isAuthenticated(req, res, next) {
 }
 
 // Dashboards
-router.get('/a', (req, res, next) => { res.render('Dashboards/Dashboard1', { title: 'Home-1' }); });
 router.get('/', isAuthenticated , (req, res, next) => { res.render('Dashboards/Dashboard1', { title: 'Home-1' }); });
 router.get('/home-2', isAuthenticated, (req, res, next) => { res.render('Dashboards/Dashboard2', { title: 'Home-2' }); });
 // E-commerce Pages
